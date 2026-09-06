@@ -2,7 +2,7 @@ package com.example.practical_exam;
 
 public class ReverseLetter {
     public static String reverseLetter(String word){
-        if (word.isBlank()){
+        if (word == null || word.isBlank()){
             return " ";
         }
         char[] chars = word.toCharArray();
@@ -11,8 +11,10 @@ public class ReverseLetter {
         while (left < right) {
             if ( !Character.isLetter(chars[left])) {
                 left++;
+                continue;
             } else if ( !Character.isLetter(chars[right])) {
                 right--;
+                continue;
             }
             char temp = chars[left];
             chars[left] = chars[right];
