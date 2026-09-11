@@ -3,7 +3,7 @@ package com.example.practical_exam;
 public class ReverseLetter {
     public static String reverseLetter(String word) {
         if (word == null || word.isBlank()) {
-            return " ";
+            return "";
         }
         char[] chars = word.toCharArray();
         int left = 0;

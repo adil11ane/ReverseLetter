@@ -18,7 +18,7 @@ class PracticalExamApplicationTests {
     @Test
     void blankStringCase() {
         String res = ReverseLetter.reverseLetter(" ");
-        assertEquals(" ", res);
+        assertEquals("", res);
     }
 
     @Test
@@ -48,7 +48,7 @@ class PracticalExamApplicationTests {
     @Test
     void nullInputCase() {
         String res = ReverseLetter.reverseLetter(null);
-        assertEquals(" " , res);
+        assertEquals("" , res);
     }
 
     @Test
